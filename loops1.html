@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>For Loop and While loop</h3>
+</body>
+<script>
+     //Multiplcation table of 5 using for loop
+        let number=5
+        for(let i=1;i<=10;i++){
+          console.log(number+"x"+i+"=",number*i)
+    }
+
+        //sum of even numbers 
+        sum=0
+    for(j=1;j<=50;j++){
+        if(j%2==0){
+            sum+=j
+        }
+    }
+        console.log("sum of even numbers between 1 to 50:" ,sum)
+    
+     
+
+    //print prime numbers from 1 to 20
+
+    let num1=2;
+    let isPrime;
+    while(num1<=20){
+        isPrime= true;
+        let i=2;
+        while(i<num1){
+            if(num1%i===0){
+                isPrime=false;
+                break;
+            }
+          i++;
+        }
+        if(isPrime){
+            console.log('The prime numbers from 1 to 20 are:' ,num1)
+        }
+          num1++;
+    }
+
+
+
+   //sum of odd numbers between 1 and 20
+   let sum1=0
+     let s=1
+      while(s<=20){
+         if(s%2==1){
+            console.log("odd numbers:" ,s)
+           sum1=sum1+s
+         }
+         s++
+      }
+      console.log('sum of odd numbers:' ,s)
+
+
+
+//factorial of 5 using while loop
+let n=5,k=1,fact=1
+ while(k<=n){
+    fact=fact*k
+    k++
+ }
+    console.log("factorial of 5 is:" ,fact)
+ 
+
+</script>
+</html>
